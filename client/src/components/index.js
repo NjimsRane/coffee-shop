@@ -18,6 +18,7 @@ export { default as ContactFind } from './contactComponents/ContactFind';
 export { default as ContactForm } from './contactComponents/ContactForm';
 export { default as Accordion } from './accordion/Accordion';
 export { default as ContactAndAboutBanner } from './contactAndAbout/ContactAndAboutBanner';
+export { default as ContactFormValidation } from './formValidation/ContactFormValidation';
 
 // footer
 export { default as ListFooter } from './listFooter/ListFooter';

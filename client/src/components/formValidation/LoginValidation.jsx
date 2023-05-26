@@ -8,10 +8,7 @@ import { useState } from 'react';
 const LoginValidation = () => {
     const [values, setValues] = useState({
         username: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-
+        password: ''
     });
 
     const inputs = [

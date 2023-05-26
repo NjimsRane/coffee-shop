@@ -1,5 +1,5 @@
 
-import { ContactFind, ContactForm, Accordion, ContactAndAboutBanner } from '../../components';
+import { ContactFind, ContactForm, Accordion, ContactAndAboutBanner, ContactFormValidation } from '../../components';
 import { banner2, liberty, place, phone, location, mail } from '../../assets';
 import { accordionData } from '../../components/accordion/dataAccordion.js';
 
@@ -65,7 +65,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row px-8 md:px-16 gap-10' >
+                <div className='flex flex-col lg:flex-row px-8 md:px-16 gap-10' >
                     <div className='flex-1'>
                         <div className='faqTitle'>
                             <h3 >faq</h3>
@@ -80,11 +80,13 @@ const Contact = () => {
                         <div className='faqTitle'>
                             <h3>contact us</h3>
                         </div>
-                        <p className='flex gap-4 w-full'>
-                            <ContactForm placeholder='First Name' />
-                            <ContactForm placeholder='First Name' />
-                        </p>
-                        <ContactForm placeholder='First Name' />
+                        <div action="#" className='flex flex-col gap-8'>
+                            <p className='flex gap-4 w-full'>
+                                <ContactFormValidation className='w-full' />
+                            </p>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

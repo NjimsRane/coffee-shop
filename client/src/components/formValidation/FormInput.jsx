@@ -24,9 +24,6 @@ const FormInput = (props) => {
                 />
                 <span className="text-[crimson] text-sm hidden">{errorMessage}</span>
             </label>
-
-
-
         </div>
     );
 };
