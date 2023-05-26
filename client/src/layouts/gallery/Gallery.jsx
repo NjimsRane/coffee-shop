@@ -14,7 +14,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div className="photos grid grid-cols-2 md:grid-cols-3 flex-[2]">
+            <div className="photos grid grid-cols-2  md:grid-cols-3 flex-[2]">
                 <div><img src={gal1} alt="coffee" /></div>
                 <div>
                     <img src={gal2} alt="coffee" />

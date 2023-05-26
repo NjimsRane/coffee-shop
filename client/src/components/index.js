@@ -12,5 +12,11 @@ export { default as NavBarDown } from './navbars/NavBarDown';
 export { default as NavBarTop } from './navbars/NavBarTop';
 
 
+// contact page
+export { default as ContactDetail } from './contactComponents/ContactDetail';
+export { default as ContactFind } from './contactComponents/ContactFind';
+export { default as ContactForm } from './contactComponents/ContactForm';
+export { default as Accordion } from './accordion/Accordion';
+
 // footer
 export { default as ListFooter } from './listFooter/ListFooter';

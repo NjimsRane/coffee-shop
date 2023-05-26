@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { logo, ios, android } from "../../assets";
-import { ListFooter } from '../../components';
+
 import { ImFacebook, ImGoogle, ImPinterest } from 'react-icons/im';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
@@ -11,7 +11,9 @@ const Footer = () => {
     return (
         <div className="container px-4 py-5 flex flex-col gap-16 md:mx-auto lg:px-16 ">
             <div className="flex items-center flex-col gap-8 md:flex-row md:justify-between ">
-                <div><img src={logo} alt="logo" className="w-64" /></div>
+                <Link to='/'>
+                    <img src={logo} alt="logo" className="w-64" />
+                </Link>
                 <div className="flex items-center flex-wrap gap-3 justify-center" >
                     <a href="#" aria-label="link to apple store">
                         <img src={ios} alt="apple" className="w-60" />
@@ -22,36 +24,65 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-8 items-center text-center md:flex-row lg:justify-between lg:text-left">
-                <div>
+                <div className="md:self-start">
                     <h3 className="footerTitle">information</h3>
-                    <div className=" footerList lg:items-start">
-                        <ListFooter linkTo='home' />
-                        <ListFooter linkTo='blog' />
-                        <ListFooter linkTo='about us' />
-                        <ListFooter linkTo='shop' />
-                        <ListFooter linkTo='contact us' />
-                    </div>
+                    <ul className=" footerList lg:items-start">
+
+                        <li>
+                            <Link to="/">home</Link>
+                        </li>
+                        <li>
+                            <Link to="/">blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/">about us</Link>
+                        </li>
+                        <li>
+                            <Link to="/">shop</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">contact</Link>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <h3 className="footerTitle">top categories</h3>
-                    <div className="footerList lg:items-start">
-                        <ListFooter linkTo='cafe latte' />
-                        <ListFooter linkTo='ice coffee' />
-                        <ListFooter linkTo='mocha' />
-                        <ListFooter linkTo='cappucino' />
-                        <ListFooter linkTo='espresso' />
-                    </div>
+                    <ul className="footerList lg:items-start">
+                        <li>
+                            <Link to="/">cafe latte</Link>
+                        </li>
+                        <li>
+                            <Link to="/">ice coffee</Link>
+                        </li>
+                        <li>
+                            <Link to="/">mocha</Link>
+                        </li>
+                        <li>
+                            <Link to="/">cappucino</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">espresso</Link>
+                        </li>
+                    </ul>
 
                 </div>
-                <div>
+                <div className="md:self-start">
                     <h3 className="footerTitle">others</h3>
-                    <div className="footerList lg:items-start">
-                        <ListFooter linkTo='checkout' />
-                        <ListFooter linkTo='cart' />
-                        <ListFooter linkTo='product' />
-                        <ListFooter linkTo='shop' />
-                        <ListFooter linkTo='legal' />
-                    </div>
+                    <ul className="footerList lg:items-start">
+                        <li>
+                            <Link to="/">checkout</Link>
+                        </li>
+                        <li>
+                            <Link to="/">cart</Link>
+                        </li>
+                        <li>
+                            <Link to="/">product</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">legal</Link>
+                        </li>
+
+                    </ul>
 
                 </div>
                 <div className="lg:self-start">
@@ -79,12 +110,21 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center gap-[1rem] md:flex-row md:gap-4">
-                <ListFooter linkTo='privacy policy' />
-                <ListFooter linkTo='refund policy' />
-                <ListFooter linkTo='cookie policy' />
-                <ListFooter linkTo='terms & conditions' />
-            </div>
+            <ul className="footerListTwo flex flex-col items-center gap-[1rem] md:flex-row md:gap-4">
+                <li>
+                    <Link to="/">privacy policy</Link>
+                </li>
+                <li>
+                    <Link to="/">refund policy</Link>
+                </li>
+                <li>
+                    <Link to="/">cookie policy</Link>
+                </li>
+                <li>
+                    <Link to="/contact">terms & conditions</Link>
+                </li>
+
+            </ul>
             <div className="">
                 <hr className="border-0 border-b-[1px] border-[#c7c6c6] " />
             </div>
