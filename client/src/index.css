@@ -79,3 +79,77 @@
         display:block;
     }
 }
+
+@layer utilities{
+    .contactDetailHover{
+        position: relative;
+        overflow:hidden;
+        cursor: pointer;
+        box-shadow:0 1px 3px 0 rgba(0,0,0,0.2);
+    }
+    .contactDetailHover::before{
+        position: absolute;
+        content:'';
+        height:2px;
+        left:25px;
+        width:70px; 
+        background-color:#634832;
+        transition:0.5s;
+        z-index:-2;
+    }
+    .contactDetailHover:hover::before{
+        inset:-10px 0rem;
+        background-color:#634832;
+        height:278px;
+        width:100%;
+    }
+
+    .contactDetailHover::after{
+        position: absolute;
+        content:'';
+        inset:2px;
+        background-color:#fff;
+        z-index:-1;
+    }
+
+    .contactDetailHover > div{
+        display:flex;
+        flex-direction:column;
+        gap:0.5rem;
+        border-radius:4px;
+        padding:2.5rem;
+        color:#838383;
+    }
+    .contactDetailHover h3{
+        font-weight:500;
+        text-transform: capitalize;
+        font-size:1.25rem;
+        margin-block:0.5rem;
+    }
+
+    .faqTitle{
+        position: relative;
+        border-bottom:2px solid #e4e4e4;
+        padding-block:2rem;
+    }
+    .faqTitle h3{
+        font-size:2.2rem;
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+    .faqTitle::after{
+        position: absolute;
+        content:'';
+        width:10rem;
+        height:0.4rem;
+        top:99%;
+        
+        background-color: #634832;
+    }
+
+    .contactForm input::placeholder{
+        font-size:1.6rem;
+    }
+
+}
+

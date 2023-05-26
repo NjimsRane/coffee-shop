@@ -16,3 +16,6 @@ export { default as ios } from './images/ios.png';
 export { default as android } from './images/android.png';
 export { default as liberty } from './images/liberty.jpg';
 export { default as place } from './images/space.jpg';
+export { default as phone } from './images/phone-call.svg';
+export { default as location } from './images/location.svg';
+export { default as mail } from './images/mail.svg';
