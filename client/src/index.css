@@ -133,7 +133,7 @@
         padding-block:2rem;
     }
     .faqTitle h3{
-        font-size:2.2rem;
+        font-size:2rem;
         text-transform: uppercase;
         font-weight:bold;
     }
@@ -143,12 +143,26 @@
         width:10rem;
         height:0.4rem;
         top:99%;
-        
         background-color: #634832;
     }
 
-    .contactForm input::placeholder{
+    .contactFormInput input::placeholder{
+        font-size:1.4rem;
+    }
+
+    .contactFormInput input{
+        border:1px solid #D3D3D3;
+        width:100%;
+        padding:1rem;
+        border-radius:2px;
         font-size:1.6rem;
+    }
+    .contactFormInput input:focus{
+        outline-color:#38220F;
+        background-color:#f3fbfb;
+    }
+    .contactFormInput input:invalid{
+        outline-color:red;
     }
 
 }

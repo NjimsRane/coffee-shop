@@ -1,75 +1,42 @@
-import { useState } from "react";
-import { FormInput } from '../../components';
+function ContactFormValidation(values) {
+    let errorMessage = {};
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const namePattern = /^[A-Za-z]+$/;
 
 
-const ContactFormValidation = () => {
+    if (values.firstName === '') {
+        errorMessage.firstName === "First Name should not be empty";
+    } else if (!namePattern.test(values.firstName)) {
+        errorMessage.firstName = 'First Name should be alphabetic characters and shouldn`t include any special character or numbers!';
+    } else {
+        errorMessage.firstName = '';
+    }
 
-    const [values, setValues] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        subject: '',
-        message: '',
+    if (values.lastName === '') {
+        errorMessage.lastName === "Last Name should not be empty";
+    } else if (!namePattern.test(values.lastName)) {
+        errorMessage.lastName = 'Last Name should be alphabetic characters and shouldn`t include any special character or numbers!';
+    } else {
+        errorMessage.lastName = '';
+    }
 
-    });
 
-    const inputs = [
-        {
-            id: 1,
-            name: 'firstName',
-            type: 'text',
-            placeholder: 'First Name',
-            required: true,
-            pattern: '^[A-Za-z]+$',
-            errorMessage: "First Name should be just alphabetic characters and shouldn`t include any special character or number!",
-        },
-        {
-            id: 2,
-            name: 'lastName',
-            type: 'text',
-            placeholder: 'Last Name',
-            required: true,
-            pattern: '^[A-Za-z]$',
-            errorMessage: "Last Name should be just alphabetic characters and shouldn`t include any special character or number!",
-        },
-        {
-            id: 3,
-            name: 'email',
-            type: 'email',
-            placeholder: 'Email Address',
-            required: true,
-            errorMessage: "Please enter a valid email form !"
-        },
-        {
-            id: 4,
-            name: 'subject',
-            type: 'text',
-            placeholder: 'Subject',
+    if (values.email === '') {
+        errorMessage.email === "Email should not be empty";
+    } else if (!emailPattern.test(values.email)) {
+        errorMessage.email = 'Please enter a valid email form';
+    } else {
+        errorMessage.email = '';
+    }
 
-        },
 
-    ];
+    if (values.message === '') {
+        errorMessage.message === "Your message is required.";
+    } else {
+        errorMessage.message = '';
+    }
 
-    const handleChange = (e) => {
-        setValues({ ...values, [e.target.name]: e.target.value });
-    };
-
-    return (
-        <div>
-            <form action="#" className="w-full flex flex-col gap-6 ">
-                {inputs.map(input => (
-                    <FormInput
-                        key={input.id}
-                        {...input}
-                        value={values[input.name]}
-                        onChange={handleChange}
-                    />
-                ))}
-                <textarea className="border w-full p-5 border-myBorder rounded focus:outline-navBar h-[20vh] resize-none" required></textarea>
-                <span className="errorMessage">Can`t be empty</span>
-            </form>
-        </div>
-    );
+    return errorMessage;
 };
 
 export default ContactFormValidation;
