@@ -1,6 +1,10 @@
 export { default as logo } from './images/logo.png';
 export { default as cake } from './images/cake.png';
 export { default as cup1 } from './images/cup1.png';
+export { default as coffee } from './images/coffee.png';
+export { default as cup2 } from './images/cup2.png';
+export { default as cup3 } from './images/cup3.png';
+export { default as mug2 } from './images/mug2.png';
 export { default as img1 } from './images/3.jpg';
 export { default as img16 } from './images/16.jpg';
 export { default as mug } from './images/mug.png';
@@ -19,3 +23,13 @@ export { default as place } from './images/space.jpg';
 export { default as phone } from './images/phone-call.svg';
 export { default as location } from './images/location.svg';
 export { default as mail } from './images/mail.svg';
+// coffee
+export { default as product1 } from './images/2.png';
+export { default as product2 } from './images/4.png';
+export { default as product3 } from './images/5.png';
+export { default as product4 } from './images/7.png';
+export { default as product5 } from './images/8.png';
+export { default as product6 } from './images/10.png';
+export { default as product7 } from './images/12.png';
+export { default as product8 } from './images/14.png';
+export { default as product9 } from './images/23.png';

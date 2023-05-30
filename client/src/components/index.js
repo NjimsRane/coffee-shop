@@ -20,5 +20,10 @@ export { default as Accordion } from './accordion/Accordion';
 export { default as ContactAndAboutBanner } from './contactAndAbout/ContactAndAboutBanner';
 export { default as ContactFormValidation } from './formValidation/ContactFormValidation';
 
+// home
+export { default as Illustrations } from './homeComponents/Illustrations';
+export { default as IllustrationComponents } from './homeComponents/IllustrationComponents';
+export { default as Products } from './homeComponents/Products';
+
 // footer
 export { default as ListFooter } from './listFooter/ListFooter';
