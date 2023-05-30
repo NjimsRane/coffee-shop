@@ -24,6 +24,9 @@ export { default as ContactFormValidation } from './formValidation/ContactFormVa
 export { default as Illustrations } from './homeComponents/Illustrations';
 export { default as IllustrationComponents } from './homeComponents/IllustrationComponents';
 export { default as Products } from './homeComponents/Products';
+export { default as ProductBtn } from './homeComponents/ProductBtn';
+export { default as FreshlyPicked } from './homeComponents/FreshlyPicked';
+export { default as FreshlyComponents } from './homeComponents/FreshlyComponents';
 
 // footer
 export { default as ListFooter } from './listFooter/ListFooter';

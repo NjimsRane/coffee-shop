@@ -10,6 +10,8 @@ export { default as img16 } from './images/16.jpg';
 export { default as mug } from './images/mug.png';
 export { default as img19 } from './images/19.jpg';
 export { default as banner2 } from './images/banner2.jpg';
+export { default as shop1 } from './images/15.jpg';
+export { default as shop2 } from './images/16.jpg';
 export { default as gal1 } from './images/1.jpg';
 export { default as gal2 } from './images/2.jpg';
 export { default as gal3 } from './images/3.jpg';
