@@ -1,10 +1,10 @@
-import { Footer, Gallery } from '../../layouts';
+import { GalleryForm } from '../../layouts';
 import { mug, img16 } from '../../assets';
 import { FormIntro, RegisterValidation } from '../../components';
 
 const Register = () => {
     return (
-        <div>
+        <div className='flex flex-col justify-between h-screen'>
             <div className="container px-4 md:p-0 max-w-[70rem] flex flex-col-reverse mx-auto md:mt-8 md:flex-row-reverse">
                 <FormIntro
                     cover={img16}
@@ -18,8 +18,8 @@ const Register = () => {
                     <RegisterValidation />
                 </div>
             </div>
-            <Gallery />
-            <Footer />
+            <GalleryForm />
+
         </div>
     );
 };

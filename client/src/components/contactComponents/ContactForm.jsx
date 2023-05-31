@@ -36,7 +36,7 @@ const ContactForm = () => {
                             name='firstName'
                             onChange={handleChange}
                             value={values.firstName}
-                            required='true'
+                            required
                         />
                         <span className="text-[crimson] text-sm hidden">{errorMessage.firstName}</span>
                     </label>
@@ -47,7 +47,7 @@ const ContactForm = () => {
                             name="lastName"
                             onChange={handleChange}
                             value={values.lastName}
-                            required='true'
+                            required
                         />
                         {errorMessage.lastName && <span className="errorMessage">{errorMessage.lastName}</span>}
                     </label>
@@ -60,7 +60,7 @@ const ContactForm = () => {
                         name="email"
                         onChange={handleChange}
                         value={values.email}
-                        required='true'
+                        required
                     />
                     {errorMessage.email && <span className="errorMessage">{errorMessage.email}</span>}
                 </label>
@@ -80,7 +80,7 @@ const ContactForm = () => {
                         name='message'
                         onChange={handleChange}
                         value={values.message}
-                        required='true'
+
                     >
 
                     </textarea>

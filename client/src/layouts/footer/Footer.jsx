@@ -9,8 +9,8 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <div className="container px-4 py-5 flex flex-col gap-16 md:mx-auto lg:px-16 ">
-            <div className="flex items-center flex-col gap-8 md:flex-row md:justify-between ">
+        <footer className="px-4 py-5 flex flex-col gap-16 md:px-6 lg:px-16 ">
+            <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between ">
                 <Link to='/'>
                     <img src={logo} alt="logo" className="w-64" />
                 </Link>
@@ -23,8 +23,8 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-col gap-8 items-center text-center md:flex-row lg:justify-between lg:text-left">
-                <div className="md:self-start">
+            <div className="flex flex-col gap-8 items-center text-center lg:flex-row lg:justify-between lg:text-left">
+                <div className="lg:self-start">
                     <h3 className="footerTitle">information</h3>
                     <ul className=" footerList lg:items-start">
 
@@ -38,7 +38,7 @@ const Footer = () => {
                             <Link to="/">about us</Link>
                         </li>
                         <li>
-                            <Link to="/">shop</Link>
+                            <Link to="/shop">shop</Link>
                         </li>
                         <li>
                             <Link to="/contact">contact us</Link>
@@ -66,7 +66,7 @@ const Footer = () => {
                     </ul>
 
                 </div>
-                <div className="md:self-start">
+                <div className="lg:self-start">
                     <h3 className="footerTitle">others</h3>
                     <ul className="footerList lg:items-start">
                         <li>
@@ -110,7 +110,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <ul className="footerListTwo flex flex-col items-center gap-[1rem] md:flex-row md:gap-4">
+            <ul className="footerListTwo flex flex-col items-center gap-[1rem] md:flex-row md:gap-4 md:justify-center">
                 <li>
                     <Link to="/">privacy policy</Link>
                 </li>
@@ -128,7 +128,7 @@ const Footer = () => {
             <div className="">
                 <hr className="border-0 border-b-[1px] border-[#c7c6c6] " />
             </div>
-        </div>
+        </footer>
     );
 };
 

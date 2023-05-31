@@ -1,8 +1,8 @@
 import { banner2, gal1, gal2, gal3, gal4, gal5, gal6 } from '../../assets';
 
-const Gallery = () => {
+const GalleryForm = () => {
     return (
-        <div className="my-8 flex flex-col md:flex-row ">
+        <div className="my-8 flex flex-col lg:flex-row ">
             <div className="follow flex-1">
                 <div className='relative h-full'>
                     <img src={banner2} alt="banner" className='w-full h-full object-cover' />
@@ -38,4 +38,4 @@ const Gallery = () => {
     );
 };
 
-export default Gallery;
+export default GalleryForm;

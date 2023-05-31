@@ -11,7 +11,7 @@ const Contact = () => {
                 img2={banner2}
                 subtitle='contact us'
             />
-            <div className="container flex flex-col gap-8 py-5 md:mx-auto">
+            <div className="flex flex-col gap-8 py-5 md:mx-auto">
                 <div className='flex flex-col gap-6 px-8 md:px-16  md:flex-row'>
                     <ContactFind
                         img={place}

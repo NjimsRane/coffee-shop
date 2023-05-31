@@ -32,8 +32,9 @@
         overflow: hidden;
     }
     .photos img{
+        width:100%;
+        height:100%;
         transition:all 0.2s ease-in-out;
-        
     }
     .photos img:hover{
         transform:scale(1.1);
@@ -46,12 +47,19 @@
         gap:2rem;
     }
 
-    .footerList li a ,
-    .footerListTwo li a{
+    .footerList  a ,
+    .footerListTwo  a{
         text-transform: capitalize;
         color:#6e6e6e;
         font-size:1.5rem;
+        transition:all 0.5s ease;
     }
+    .footerList  a:hover,
+    .footerListTwo  a:hover{
+        color:#38220F;
+    }
+
+    
 
     .footerLinks{
         display:flex;

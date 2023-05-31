@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "name":"risotto",
+        "currentPrice":18,
+        "imgUrl":"/imgs/2.png"
+    },
+    {
+        "id":2,
+        "name":"strong",
+        "currentPrice":22,
+        "prevPrice":29,
+        "imgUrl":"/imgs/5.png"
+    },
+    {
+        "id":3,
+        "name":"arabica",
+        "currentPrice":16,
+        "imgUrl":"/imgs/12.png"
+    },
+    {
+        "id":4,
+        "name":"robusta roasted",
+        "currentPrice":17,
+        "imgUrl":"/imgs/23.png"
+    },
+    {
+        "id":5,
+        "name":"italian coffee",
+        "currentPrice":19,
+        "prevPrice":26,
+        "imgUrl":"/imgs/10.png"
+    },
+    {
+        "id":6,
+        "name":"arabica roasted",
+        "currentPrice":17,
+        "imgUrl":"/imgs/14.png"
+    },
+    {
+        "id":7,
+        "name":"mocha",
+        "currentPrice":19,
+        "imgUrl":"/imgs/7.png"
+    },
+    {
+        "id":8,
+        "name":"arabica",
+        "currentPrice":18,
+        "imgUrl":"/imgs/8.png"
+    },
+    {
+        "id":9,
+        "name":"risotto",
+        "currentPrice":16,
+        "imgUrl":"/imgs/2.png"
+    }
+]

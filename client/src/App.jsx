@@ -5,7 +5,7 @@ import {
   RouterProvider,
 
 } from "react-router-dom";
-import { Contact, Home, Login, Register } from './pages';
+import { Contact, Home, Login, Register, Shop } from './pages';
 import { Footer, Gallery, Header } from './layouts';
 
 
@@ -17,7 +17,9 @@ const App = () => {
     return (
       <div>
         <Header />
-        <Outlet />
+        <div>
+          <Outlet />
+        </div>
         <Gallery />
         <Footer />
       </div>
@@ -48,6 +50,10 @@ const App = () => {
         {
           path: '/contact',
           element: <Contact />
+        },
+        {
+          path: '/shop',
+          element: <Shop />
         }
       ]
     },
@@ -62,7 +68,7 @@ const App = () => {
 
   ]);
   return (
-    <div>
+    <div className="bg-[#f7f7f7e8]">
       <RouterProvider router={router} />
     </div>
   );

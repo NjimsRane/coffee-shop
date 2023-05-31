@@ -1,12 +1,12 @@
-import { Footer, Gallery } from '../../layouts';
+import { GalleryForm } from '../../layouts';
 import { FormIntro, LoginValidation } from '../../components';
 import { mug, img19 } from '../../assets';
 
 const Login = () => {
     return (
-        <div >
+        <div className='flex flex-col justify-between h-screen'>
 
-            <div className="container px-4 md:p-0 max-w-[70rem] flex flex-col mx-auto md:mt-8 md:flex-row ">
+            <div className="px-4 md:p-0 max-w-[70rem] flex flex-col  md:mt-8 md:flex-row md:self-center ">
                 <FormIntro
                     cover={img19}
                     img1={mug}
@@ -18,8 +18,8 @@ const Login = () => {
                     <LoginValidation />
                 </div>
             </div>
-            <Gallery />
-            <Footer />
+            <GalleryForm />
+
         </div>
     );
 

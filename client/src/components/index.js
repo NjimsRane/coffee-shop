@@ -25,8 +25,14 @@ export { default as Illustrations } from './homeComponents/Illustrations';
 export { default as IllustrationComponents } from './homeComponents/IllustrationComponents';
 export { default as Products } from './homeComponents/Products';
 export { default as ProductBtn } from './homeComponents/ProductBtn';
+export { default as ProductsDesc } from './homeComponents/ProductsDesc';
+export { default as FiveStart } from './homeComponents/ProductStar';
 export { default as FreshlyPicked } from './homeComponents/FreshlyPicked';
 export { default as FreshlyComponents } from './homeComponents/FreshlyComponents';
+
+// card
+export { default as CardComponents } from './shopComponents/CardComponents';
+
 
 // footer
 export { default as ListFooter } from './listFooter/ListFooter';
