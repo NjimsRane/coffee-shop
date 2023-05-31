@@ -18,9 +18,9 @@ const App = () => {
     return (
       <div>
         <Header />
-        <main>
+        <div>
           <Outlet />
-        </main>
+        </div>
         <Gallery />
         <Footer />
       </div>

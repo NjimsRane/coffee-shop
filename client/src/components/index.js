@@ -30,6 +30,9 @@ export { default as FiveStart } from './homeComponents/ProductStar';
 export { default as FreshlyPicked } from './homeComponents/FreshlyPicked';
 export { default as FreshlyComponents } from './homeComponents/FreshlyComponents';
 
+// hero
+export { default as HeroComponents } from './heroComponents/HeroComponents';
+
 // card
 export { default as CartComponents } from './shopComponents/CartComponents';
 export { default as ShoppingCart } from './shoppingCart/ShoppingCart';
