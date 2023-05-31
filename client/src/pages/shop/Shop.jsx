@@ -1,5 +1,5 @@
 import storeItems from '../../data/items.json';
-import { CardComponents } from '../../components';
+import { CartComponents } from '../../components';
 
 
 const Shop = () => {
@@ -9,7 +9,7 @@ const Shop = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
                 {storeItems.map(item => (
                     <div key={item.id}>
-                        <CardComponents {...item} />
+                        <CartComponents {...item} />
                     </div>
                 ))}
             </div>

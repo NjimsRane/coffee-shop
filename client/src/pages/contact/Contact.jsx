@@ -29,40 +29,33 @@ const Contact = () => {
                 <div className='flex flex-col gap-12 px-8 md:px-16 lg:flex-row'>
                     <div className='contactDetailHover'>
                         <div>
-                            <div>
-                                <a href="tel:+2333440944" rel='noreferrer nopener' target='_blank' aria-label='link to make phone call'>
-                                    <img src={phone} alt="phone svg" className="w-[4rem]" />
-                                </a>
-                                <h3>call center</h3>
-                                <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
-                            </div>
+                            <a href="tel:+2333440944" rel='noreferrer nopener' target='_blank' aria-label='link to make phone call'>
+                                <img src={phone} alt="phone svg" className="w-[4rem]" />
+                            </a>
+                            <h3>call center</h3>
+                            <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
                         </div>
-
-                    </div>
-
-                    <div className='contactDetailHover'>
-                        <div >
-                            <div>
-                                <a href="mailto:rane@mail.com" rel='noreferrer nopener' target='_blank' aria-label='link to send mail'>
-                                    <img src={mail} alt="mail svg" className="w-[4rem]" />
-                                </a>
-                                <h3>mail us</h3>
-                                <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
-                            </div>
-                        </div>
-
                     </div>
 
                     <div className='contactDetailHover'>
                         <div>
-                            <div>
-                                <a href="#" rel='noreferrer nopener' target='_blank' aria-label='link to find location'>
-                                    <img src={location} alt="location svg" className="w-[4rem]" />
-                                </a>
-                                <h3>nearest branch</h3>
-                                <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
-                            </div>
+                            <a href="mailto:rane@mail.com" rel='noreferrer nopener' target='_blank' aria-label='link to send mail'>
+                                <img src={mail} alt="mail svg" className="w-[4rem]" />
+                            </a>
+                            <h3>mail us</h3>
+                            <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
                         </div>
+                    </div>
+
+                    <div className='contactDetailHover'>
+                        <div>
+                            <a href="#" rel='noreferrer nopener' target='_blank' aria-label='link to find location'>
+                                <img src={location} alt="location svg" className="w-[4rem]" />
+                            </a>
+                            <h3>nearest branch</h3>
+                            <p className="text-2xl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, excepturi aspernatur! Quos officiis eius repellat, a nobis nam blanditiis vitae.</p>
+                        </div>
+
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row px-8 md:px-16 gap-10' >

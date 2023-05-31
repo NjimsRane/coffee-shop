@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Contact, Home, Login, Register, Shop } from './pages';
 import { Footer, Gallery, Header } from './layouts';
+import { ShoppingCart } from "./components";
 
 
 const App = () => {
@@ -17,9 +18,9 @@ const App = () => {
     return (
       <div>
         <Header />
-        <div>
+        <main>
           <Outlet />
-        </div>
+        </main>
         <Gallery />
         <Footer />
       </div>
@@ -54,6 +55,10 @@ const App = () => {
         {
           path: '/shop',
           element: <Shop />
+        },
+        {
+          path: '/cart',
+          element: <ShoppingCart />
         }
       ]
     },

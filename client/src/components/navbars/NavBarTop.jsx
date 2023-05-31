@@ -3,7 +3,9 @@ import { AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
 import { BsYoutube } from 'react-icons/bs';
 
 
+
 const NavBarTop = () => {
+
     return (
         <div className="bg-navBar flex justify-between items-center px-4 py-5 text-[#fff] md:px-16">
             <div className="left flex items-center gap-6">

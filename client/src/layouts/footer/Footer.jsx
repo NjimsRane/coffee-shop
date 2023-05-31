@@ -73,7 +73,7 @@ const Footer = () => {
                             <Link to="/">checkout</Link>
                         </li>
                         <li>
-                            <Link to="/">cart</Link>
+                            <Link to="/cart">cart</Link>
                         </li>
                         <li>
                             <Link to="/">product</Link>

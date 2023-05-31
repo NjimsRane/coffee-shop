@@ -31,7 +31,8 @@ export { default as FreshlyPicked } from './homeComponents/FreshlyPicked';
 export { default as FreshlyComponents } from './homeComponents/FreshlyComponents';
 
 // card
-export { default as CardComponents } from './shopComponents/CardComponents';
+export { default as CartComponents } from './shopComponents/CartComponents';
+export { default as ShoppingCart } from './shoppingCart/ShoppingCart';
 
 
 // footer

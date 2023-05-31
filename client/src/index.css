@@ -59,8 +59,6 @@
         color:#38220F;
     }
 
-    
-
     .footerLinks{
         display:flex;
         justify-content:center;
@@ -86,9 +84,7 @@
     input:invalid[focused='true']~span{
         display:block;
     }
-}
 
-@layer utilities{
     .contactDetailHover{
         position: relative;
         overflow:hidden;
@@ -98,16 +94,16 @@
     .contactDetailHover::before{
         position: absolute;
         content:'';
-        height:2px;
+        height:100px;
         left:25px;
         width:70px; 
-        background-color:#634832;
+        background-color:#38220F;
         transition:0.5s;
         z-index:-2;
     }
     .contactDetailHover:hover::before{
         inset:-10px 0rem;
-        background-color:#634832;
+        background-color:#38220F;
         height:278px;
         width:100%;
     }
@@ -172,6 +168,6 @@
     .contactFormInput input:invalid{
         outline-color:red;
     }
-
 }
+
 
