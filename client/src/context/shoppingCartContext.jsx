@@ -13,7 +13,7 @@ export const ShoppingCartProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [cartItems, setCartItems] = useState([]);
 
-    const getItemtQuantity = (id) => {
+    const getItemQuantity = (id) => {
         return (cartItems.find(item => item.id === id))
             ?.quantity
             || 0;
@@ -69,7 +69,7 @@ export const ShoppingCartProvider = ({ children }) => {
     return (
         <ShoppingCartContext.Provider
             value={{
-                getItemtQuantity,
+                getItemQuantity,
                 increaseCartQuantity,
                 decreaseCartQuantity,
                 removeFromCart,

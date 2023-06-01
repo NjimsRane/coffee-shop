@@ -9,9 +9,9 @@ import { useShoppingCart } from '../../context/shoppingCartContext';
 
 
 const CartComponents = ({ id, name, currentPrice, prevPrice, imgUrl }) => {
-    const { getItemtQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
+    const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
 
-    const quantity = getItemtQuantity(id);
+    const quantity = getItemQuantity(id);
 
     return (
         <div className="shadow p-4 h-fit text-center">
